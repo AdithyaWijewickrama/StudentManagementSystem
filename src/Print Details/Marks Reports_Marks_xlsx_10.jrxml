@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Marks Report_Data" language="groovy" printOrder="Horizontal" pageWidth="1584" pageHeight="792" orientation="Landscape" columnWidth="1584" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="5b244140-feef-48ef-81dc-1cee4f9f7938">
+	<property name="ireport.zoom" value="1.3636363636363658"/>
+	<property name="ireport.x" value="1040"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from 'Grade 10-11']]>
+	</queryString>
+	<field name="Admission No." class="java.lang.Object"/>
+	<field name="Name" class="java.lang.Object"/>
+	<field name="Religion" class="java.lang.Object"/>
+	<field name="Primary Language" class="java.lang.Object"/>
+	<field name="English" class="java.lang.Object"/>
+	<field name="Mathamatics" class="java.lang.Object"/>
+	<field name="Science" class="java.lang.Object"/>
+	<field name="History" class="java.lang.Object"/>
+	<field name="Basket01" class="java.lang.Object"/>
+	<field name="Basket02" class="java.lang.Object"/>
+	<field name="Easthetic" class="java.lang.Object"/>
+	<field name="Total" class="java.lang.Object"/>
+	<field name="Average" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="326" y="0" width="77" height="20" uuid="b081135b-297f-480f-9c89-4c0e19083f5d"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Religion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="403" y="0" width="132" height="20" uuid="7f863bfd-b6cd-4687-abef-8e960f9d69bd"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Primary Language]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="535" y="0" width="96" height="20" uuid="477bafeb-6e80-4207-9e85-02ec5f977e5a"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[English]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="631" y="0" width="114" height="20" uuid="9efbc020-33d8-4517-859c-bc41c65d9740"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Mathamatics]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="824" y="0" width="76" height="20" uuid="2bce943b-b055-4b78-9b51-2411a27dcd6c"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[History]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="900" y="0" width="93" height="20" uuid="7e40382b-01aa-483c-b33f-a1d500bd2dc4"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Basket 01]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="993" y="0" width="94" height="20" uuid="93ae3813-ef34-4314-9e3f-475903960176"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Basket 02]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="745" y="0" width="79" height="20" uuid="74828ea5-1ebf-4e4c-9d66-d01aa3207993"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Science]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1087" y="0" width="106" height="20" uuid="51415d66-01c1-42d5-95d9-99d06cd47f7a"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Easthetic]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1193" y="0" width="112" height="20" uuid="4149d5dc-5bd3-4a00-b585-d6c659fb4b6b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="1305" y="0" width="102" height="20" uuid="7e2d490c-d6f6-4ed4-8dc6-4fb6e5c66f7b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true" isPdfEmbedded="false"/>
+				</textElement>
+				<text><![CDATA[Average]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="98" height="20" uuid="2bdabe83-cef7-4b99-befc-3a43bd421915"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Admission No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="0" width="228" height="20" uuid="604ac1c3-8057-4543-bbf2-d96fd43f9264"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Immediate">
+			<textField>
+				<reportElement x="98" y="0" width="228" height="20" uuid="ecc66a3c-76ac-4e91-ab71-30827613a610"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="1193" y="0" width="112" height="20" uuid="0e3cf43a-1435-4348-bb3e-6e2f720ea124"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14" isBold="true" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="403" y="0" width="132" height="20" uuid="34daebb0-58bb-4c38-952f-41a2a1784c5f"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Primary Language}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="745" y="0" width="79" height="20" uuid="a40ef887-b17b-47ce-b887-3996f7ad4b05"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Science}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="535" y="0" width="96" height="20" uuid="2b19e6f4-6ec7-4574-9c34-25fd225428e1"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{English}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="993" y="0" width="94" height="20" uuid="b3b77d60-37c9-4a6b-8e08-7de997d1b894"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Basket02}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="631" y="0" width="114" height="20" uuid="5f262c77-fac8-4cb9-ad41-6cfbc3d6c581"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Mathamatics}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="326" y="0" width="77" height="20" uuid="87afbcfc-2b78-4c23-bd3f-f6925a9b62a3"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Religion}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="900" y="0" width="93" height="20" uuid="3bddee23-785a-4037-aa74-9866f43b9b92"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Basket01}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1087" y="0" width="106" height="20" uuid="19497f56-8b52-4ef5-b105-15ba9755fcd1"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Easthetic}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="1305" y="0" width="102" height="20" uuid="1dfbaf2d-a7a9-4e98-9bd9-7a69856a2355"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font size="14" isBold="true" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Average}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="824" y="0" width="76" height="20" uuid="c0eff65a-83cf-4dca-a3e4-894ab3e3e80c"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{History}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="98" height="20" uuid="3fd9ab80-938c-42aa-ad80-0687302ec423"/>
+				<textElement verticalAlignment="Middle" markup="none">
+					<font size="15"/>
+					<paragraph leftIndent="5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Admission No.}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Marks Reports" language="groovy" pageWidth="1584" pageHeight="1584" whenNoDataType="AllSectionsNoDetail" columnWidth="1544" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31e1e725-c11f-4590-81e4-2f17ad949771">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="MARKS_DIR" class="java.lang.String">
+		<defaultValueExpression><![CDATA["C:\\Users\\Dell\\Documents\\NetBeansProjects\\Student Management System\\Print Details\\Marks Reports_Marks_xlsx_1.jasper"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="APPLICATION_DIR" class="java.lang.String">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+		<defaultValueExpression><![CDATA["C:\\Users\\Dell\\Documents\\NetBeansProjects\\Student Management System"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[Select * from Images]]>
+	</queryString>
+	<field name="Left" class="java.lang.Object"/>
+	<field name="Right" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="45" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="1544" height="45" uuid="d5e43cb6-1ee1-485a-a598-b9aefae63c3e"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{APPLICATION_DIR}+"\\Print Details\\Marks Reports_Title_xlsx.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<subreport isUsingCache="true" runToBottom="false">
+				<reportElement x="0" y="0" width="1544" height="41" uuid="a3bf8ffe-bd04-49be-83ba-141d1f7b577c"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{MARKS_DIR}]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

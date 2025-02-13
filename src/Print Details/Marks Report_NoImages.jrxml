@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Marks Reports" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31e1e725-c11f-4590-81e4-2f17ad949771">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="New Dataset 1" uuid="171b3e0e-65bd-4b20-9f14-00e0a865833a">
+		<queryString>
+			<![CDATA[select * from Marks]]>
+		</queryString>
+	</subDataset>
+	<queryString>
+		<![CDATA[SELECT Value FROM Others WHERE ID='PRINTDETAILS_DIR']]>
+	</queryString>
+	<field name="Value" class="java.lang.Object"/>
+	<title>
+		<band splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="0" uuid="d5e43cb6-1ee1-485a-a598-b9aefae63c3e"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$F{Value}+"\\Marks Reports_Title.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</title>
+	<columnHeader>
+		<band splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="0" uuid="1bb990bc-b5e9-4d29-8eae-8b5b152cb4b7"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$F{Value}+"\\Marks Reports_Description.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</columnHeader>
+	<detail>
+		<band>
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="0" uuid="a3bf8ffe-bd04-49be-83ba-141d1f7b577c"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$F{Value}+"\\Marks Reports_Marks.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<lastPageFooter>
+		<band/>
+	</lastPageFooter>
+	<summary>
+		<band splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="0" uuid="bd2184a3-f82e-4648-bd32-8adb4b3d38f6"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$F{Value}+"\\Marks Reports_Summery.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

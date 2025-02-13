@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Marks Reports_subreport1" language="groovy" pageWidth="1584" pageHeight="802" whenNoDataType="BlankPage" columnWidth="1584" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7bbd87f0-31bc-4557-b867-5ef7dda244e4">
+	<property name="ireport.zoom" value="1.1000000000000005"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[select * from Title]]>
+	</queryString>
+	<field name="Field" class="java.lang.Object"/>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="0" width="1584" height="30" uuid="f09fa335-9ea2-465a-ab34-c9b1d729e348"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Field}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
