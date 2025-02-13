@@ -2,7 +2,6 @@ package com.Database.manage.user;
 
 import com.Database.Sql;
 import com.Database.manage.db.NewQuery;
-import java.util.ArrayList;
 
 /**
  *
