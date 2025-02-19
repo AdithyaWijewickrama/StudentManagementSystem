@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Marks Reports" language="groovy" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="31e1e725-c11f-4590-81e4-2f17ad949771">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="New Dataset 1" uuid="171b3e0e-65bd-4b20-9f14-00e0a865833a">
+		<queryString>
+			<![CDATA[select * from Marks]]>
+		</queryString>
+		<field name="Subject" class="java.lang.Object"/>
+		<field name="Marks" class="java.lang.Object"/>
+		<field name="Grade" class="java.lang.Object"/>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Dell\\Documents\\NetBeansProjects\\StudentManagementSystem\\src"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[Select * from Images]]>
+	</queryString>
+	<field name="Left" class="java.lang.Object"/>
+	<field name="Right" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="2" width="555" height="45" isPrintInFirstWholeBand="true" uuid="d5e43cb6-1ee1-485a-a598-b9aefae63c3e"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"\\Print Details\\Marks Reports_Title.jasper"]]></subreportExpression>
+			</subreport>
+			<image isUsingCache="false" onErrorType="Blank">
+				<reportElement x="0" y="2" width="95" height="122" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="ec5ceffc-cae0-489d-ade5-598c306c0660"/>
+				<imageExpression><![CDATA[$F{Left}]]></imageExpression>
+			</image>
+			<image hAlign="Right" isUsingCache="false" onErrorType="Blank">
+				<reportElement x="460" y="0" width="95" height="124" uuid="ef7fe2b8-1f80-4a56-9da9-aa3f389a7f40"/>
+				<imageExpression><![CDATA[$F{Right}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="52" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="51" uuid="1bb990bc-b5e9-4d29-8eae-8b5b152cb4b7"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"\\Print Details\\Marks Reports_Description.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</columnHeader>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

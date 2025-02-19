@@ -1,6 +1,5 @@
 package com.Database.manage.school;
 
-import com.ManageDetails.school.*;
 import com.Codes.Commons;
 import com.Database.Sql;
 import static com.Database.DBconnect.CONN;

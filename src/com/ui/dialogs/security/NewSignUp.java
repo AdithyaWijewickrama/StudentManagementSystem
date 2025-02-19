@@ -274,7 +274,9 @@ public class NewSignUp extends javax.swing.JDialog {
         JPanel p = (JPanel) jLayeredPane1.getComponent(0);
         if (p.equals(userNamePanel)) {
             String username = jTextField1.getText();
-            if (Security.isSingedUp(username)) {
+            if (username.isEmpty()) {
+                Commons.showErrMsg("User name cannot be empty");
+            } else if (Security.isSingedUp(username)) {
                 Commons.showErrMsg("User name is already taken");
             } else {
                 security = new Security(username);
@@ -319,12 +321,12 @@ public class NewSignUp extends javax.swing.JDialog {
         if (p.equals(userNamePanel)) {
             dispose();
         } else if (p.equals(questionPanel)) {
-            p=passwordPanel;
+            p = passwordPanel;
         } else if (p.equals(passwordPanel)) {
             jButton2.setText("Cancel");
-            p=userNamePanel;
+            p = userNamePanel;
         } else if (p.equals(allSetPanel)) {
-            p=questionPanel;
+            p = questionPanel;
         }
         setPanel(p);
     }//GEN-LAST:event_jButton2ActionPerformed
