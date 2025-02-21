@@ -12,7 +12,7 @@ This Java-based Student Management System helps efficiently manage student data,
 
 ## 🔐 Login  
 > **Manage student details in an educational center.**  
-![Login Screenshot](https://github.com/AdithyaWijewickrama/Student_Management_System/assets/100616334/96fa2ee9-3d39-4395-a90f-79add9e7b471)  
+>[Login Screenshot](https://github.com/AdithyaWijewickrama/Student_Management_System/assets/100616334/96fa2ee9-3d39-4395-a90f-79add9e7b471)  
 
 ## ⏳ Loading  
 > **Connecting to servers & loading data.**  
